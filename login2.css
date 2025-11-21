@@ -1,0 +1,46 @@
+/* Define styling for the container */
+html{
+    font-size: 100%;
+}
+.container {
+    border: 1px solid #000; /* Add border */
+    padding: 20px; /* Add padding inside the box */
+    width: 500px; /* Set width of the box */
+    margin: 5 auto; /* Center the box horizontally */
+    background-color: #5ff79e;
+}
+
+/* Additional styling for the content inside the container */
+.container h2 {
+    color: #219150; /* Change heading color */
+}
+
+.container p {
+    font-size: 16px; /* Set font size for paragraphs */
+}
+
+.container ul {
+    list-style-type: none; /* Remove bullet points from unordered list */
+    padding-left: 0; /* Remove default padding from unordered list */
+}
+
+.container ul li {
+    margin-bottom: 10px; /* Add margin between list items */
+}
+.body{
+    padding:50px;
+    background-color: #62f39e;
+
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+}
+.form-group{
+    margin-bottom:30px;
+}
+.btn{
+    background-color: #27ae60;
+}
+

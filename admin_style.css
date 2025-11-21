@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+:root{
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+*{
+    font-family: "Poppins", sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline:none;border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear, width none;
+
+
+
+}
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-padding-top:5rem;
+    scroll-behavior:smooth ;
+
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+section{
+    padding:5rem 5%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    top:50%; left:0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 01rem;
+    background:rgba(0,0,0,.1);
+    z-index: -1;
+
+}
+.heading span{
+    font-size: 3rem;
+    padding:.5rem 2rem;
+    color:var(--black);
+    background: #fff;
+    border:var(--border);
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:1rem 2rem;
+    border-radius: .5rem;
+    color:#fff;
+    background:var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight:500;
+}
+.btn:hover{
+    background:var(--dark-color);
+}
+.header .header-1{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+.header .header-1 .logo i{
+    color:var(--green);
+
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+    font-size: 2.5rem;
+    margin-left:1.5rem;
+    color:var(--black);
+    cursor: pointer;
+
+}
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color:var(--green);
+}
+#search-btn{
+    display: none;
+}
+.header .header-2{
+    background:var(--green);
+}
+.header-2{
+    padding-top: 5px;
+}
+.header .header-2 .navbar{
+    text-align: center;
+
+}
+.header .header-2 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding:1.2rem;
+    font-size: 1.7rem;
+    
+}
+.header .header-2 .navbar a:hover{
+    background:var(--dark-color) ;
+}
+.header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+.dashboard .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.dashboard .box-container .box{
+    border-radius: .5rem;
+    padding:2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    text-align: center;
+}
+.dashboard .box-container .box h3{
+    font-size: 5rem;
+    color: var(--black);
+}
+.dashboard .box-container .box p{
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--light-bg);
+    color:var(--green);
+    font-size:1.5rem;
+    border:var(--border);
+}
+.title{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 2rem;
+
+}
+.add-products form{
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    max-width: 50rem;
+    margin:0 auto;
+ 
+}
+.add-products form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+.add-products form .box{
+    width: 100%;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    color: var(--black);
+    font-size: 1.8rem;
+    border-radius: .5rem;
+}
+.add-products .title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+.add-products .box {
+    width: 100%;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    color: var(--black);
+    font-size: 1.8rem;
+    border:var(--border);
+}
+.show-products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    justify-content:center;
+    gap:1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.show-products{
+    padding-top: 0;
+}
+.show-products .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow:var(--box-shadow);
+    background-color: var(--white);
+}
+.show-products .box-container .box img{
+    height: 30rem;
+}
+.show-products .box-container .box .name{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color:var(--black);
+}
+.show-products .box-container .box .price{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color:var(--green);
+}
+.box-container .box .option-btn,
+.box-container .box .delete-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; /* Adjust padding to increase button size */
+    border-radius: 5px;
+    background-color: var(--);
+    color: black;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.box-container .box .option-btn:hover{
+    background-color: var(--green);
+
+}
+.box-container .box .delete-btn:hover {
+    background-color:#aa2727;
+}
+.empty{
+    padding:1.5rem;
+    text-align: center;
+    border: var(--border);
+    background-color: var(--white);
+    color:var(--red);
+    font-size: 2rem;
+
+}
+.edit-product-form{
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    overflow-y: scroll;
+    position: fixed;
+    top:0; left:0;
+    z-index:1200;
+    width: 100%;
+}
+.edit-product-form form{
+    width: 50rem;
+    padding:2rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: white;
+}
+.edit-product-form form img{
+    height: 25rem;
+}
+.edit-product-form form .box{
+    margin:1rem 0;
+    padding: 1.2rem 1.4rem;
+    border: var(--border);
+    border-radius:.5rem;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+    color: var(--black);
+    width: 100%;
+}

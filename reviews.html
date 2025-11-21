@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <form action="submit_review.php" method="post">
+        <!-- Your form fields go here -->
+    
+
+<div class="container" id="reviews-container">
+    <h1>Reviews</h1>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+<input type="email" id="email" name="email" placeholder="Enter your Email" required />
+<input type="text" id="address" name="address" placeholder="Enter your address" required />
+<textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+
+
+
+
+        <button type="submit">submit </button>
+        
+        <button class="buttonclose" id="close-btn">&times;</button>
+      
+    
+    </form>
+</div>
+
+</form>
+
+
+<script src="reviews.js"></script>
+</body>
+</html>
